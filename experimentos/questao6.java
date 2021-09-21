@@ -5,21 +5,21 @@ import java.util.Scanner;
 
 public class questao6 {
 	public static void main(String[] args) {
-		Scanner read = new Scanner(System.in);
+		Scanner leia = new Scanner(System.in);
 		int nTestes = 0, experi = 0, cont = 0, qSapo = 0, qCoelho = 0, qRato = 0;
 		double porcentC, porcentR, porcentS, total = 0;
 		String anim;
 		DecimalFormat deci = new DecimalFormat("0.00");
 
 		System.out.print("Total de testes realizados: ");
-		nTestes = read.nextInt();
+		nTestes = leia.nextInt();
 		System.out.print("Tendo em vista que: \n C - Coelho \n R - Rato \n S - Sapo \n");
 
 		while (cont < nTestes) {
 			System.out.println("Informe o animal utilizado: ");
-			anim = read.next();
+			anim = leia.next();
 			System.out.println("Quantas vezes " + anim + " foi testado: ");
-			experi = read.nextInt();
+			experi = leia.nextInt();
 			if (anim.equalsIgnoreCase("C")) {
 				qCoelho += experi;
 			} else if (anim.equalsIgnoreCase("R")) {
