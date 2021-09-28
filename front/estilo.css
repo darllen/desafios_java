@@ -9,6 +9,7 @@ a{
 	font-size: 15px;
 	color: white;
 } 
+
 nav{	
 	background-image: url("https://freepikpsd.com/media/2019/10/faixa-cinza-transparente-png-1-Transparent-Images-228x169.png");
 	opacity: 20.5 ;
@@ -19,6 +20,7 @@ nav{
 	color: white;
 	background-color: #DAA520
 }
+
 .charme{
 	width: 500px;
 	height: 480px;
@@ -31,6 +33,7 @@ nav{
 	top: calc(50% - 80px);
 	left: calc(50% - 225px);
 }
+
 .final{
 	color: white;
 	font-family: helvetica;
@@ -42,12 +45,12 @@ nav{
 	top: calc(120% - 10px);
 	left: calc(50% - 50px);
 }
+
 #mudar{
 	text-transform: uppercase;
 }
+
 #formulario{
 	font-size: 18px;
 
 }
-
-
