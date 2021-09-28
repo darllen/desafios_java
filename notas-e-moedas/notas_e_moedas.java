@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class notas_e_moedas {
 
 	public static void main(String[] args) {
-		Scanner read = new Scanner(System.in);
+		Scanner leia = new Scanner(System.in);
 		double valor, nt10, nt5, nt2, nt100, nt50, nt20,
 		m1, m50, m25, m10, m5, m01;
 		System.out.print("Digite o valor: ");
-		valor = read.nextDouble();
+		valor = leia.nextDouble();
 		final double valorC = valor;
 
 		//NOTAS
