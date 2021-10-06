@@ -1,0 +1,53 @@
+body{
+	font-family: helvetica;
+	background-image: url("https://www.papeldeparede.etc.br/fotos/wp-content/uploads/lua_nova_com_estrela_cadente.jpg"); 
+	/*filter: blur(1px);*/
+}
+
+a{
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+} 
+nav{	
+	background-image: url("https://freepikpsd.com/media/2019/10/faixa-cinza-transparente-png-1-Transparent-Images-228x169.png");
+	opacity: 20.5 ;
+	text-transform: uppercase;
+}
+
+#selecao{
+	color: white;
+	background-color: #DAA520
+}
+.charme{
+	width: 500px;
+	height: 480px;
+	background-color: #DCDCDC;
+	box-shadow: -5px -5px 5px rgba(0, 0, 0, .3);/*sombreamento*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: calc(50% - 80px);
+	left: calc(50% - 225px);
+}
+.final{
+	color: white;
+	font-family: helvetica;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: absolute;
+	top: calc(120% - 10px);
+	left: calc(50% - 50px);
+}
+#mudar{
+	text-transform: uppercase;
+}
+#formulario{
+	font-size: 18px;
+
+}
+
+
