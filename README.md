@@ -1,3 +1,6 @@
 # mini-desafios
 
-Algumas atividades realizadas para aperfeiçoar conhecimentos
+Estou aprendendo:
+- Spring Boot
+- Angular 
+- Node.js
