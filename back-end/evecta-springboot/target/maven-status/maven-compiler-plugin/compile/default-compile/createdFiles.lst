@@ -1,0 +1,3 @@
+com\eventos\evecta\EvectaApplication.class
+com\eventos\evecta\AppController.class
+com\eventos\evecta\config\DBConfiguration.class
