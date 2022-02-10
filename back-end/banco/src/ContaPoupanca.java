@@ -1,4 +1,4 @@
-public class ContaPoupanca extends Conta {
+public final class ContaPoupanca extends Conta {
 
     @Override
     public void depositar(double valor) {
@@ -6,8 +6,9 @@ public class ContaPoupanca extends Conta {
         this.juro();
     }
 
-    private void juro(){
-    this.saldo += 1;
-}
+    @Override
+    protected void juro(){
+        this.saldo += 1;
+    }
 
 }

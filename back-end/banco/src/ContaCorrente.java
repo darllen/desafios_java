@@ -1,7 +1,4 @@
-public class ContaCorrente extends Conta{
-    // ContaCorrente herda de Conta
-
-    //Reescrever o método da classe mãe
+public final class ContaCorrente extends Conta{
 
     @Override
     public void sacar(double valor) {
@@ -9,7 +6,8 @@ public class ContaCorrente extends Conta{
         this.juro();
     }
 
-    private void juro(){
-        this.saldo -= 1;
+    @Override
+    protected void juro(){
+        this.saldo +=1;
     }
 }
