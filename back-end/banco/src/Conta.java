@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta { 
 
     protected double saldo;
     public int conta;
@@ -18,7 +18,9 @@ public class Conta {
 
     public void verSaldo(){
         System.out.println("Saldo R$ "+ this.saldo);
-
     }
+
+    //método abstrato
+    protected abstract void juro();
 
 }
