@@ -1,43 +1,44 @@
 package entities;
 
 public class Account {
-    private int number;
+    private Integer number;
     private String holder;
-    private double balance;
+    protected Double balance;
 
-    //CONTRUTORES
-    public Account(int number, String holder, double initialDeposit) {
+    public Account(){};
+
+    public Account(Integer number, String holder, Double balance) {
         this.number = number;
         this.holder = holder;
-        addBalance(initialDeposit);
+        this.balance = balance;
     }
 
-    public Account(int number, String holder) {
-        this.number = number;
-        this.holder = holder;
-        this.balance = 0;
+    public Integer getNumber() {
+        return number;
     }
 
-    //GET E SET
     public String getHolder() {
         return holder;
     }
 
-    //MÉTODOS
-    public void addBalance(double amount){
-        this.balance += amount;
+    public void setHolder(String holder) {
+        this.holder = holder;
     }
 
-    public void removeBalance(double amount){
-        this.balance -= amount + 5;
+    public Double getBalance() {
+        return balance;
     }
 
-    public String toString(){
-        return "Account "
-                + number
-                + ", Holder: "
-                + getHolder()
-                +", Balance: $ "
-                + String.format("%.2f", balance);
+    public void setBalance(Double balance) {
+        this.balance = balance;
     }
+
+    public void withDraw(double amount){
+         balance -= amount + 5.0;
+    }
+
+    public void deposit(double amount){
+        balance += amount;
+    }
+
 }
