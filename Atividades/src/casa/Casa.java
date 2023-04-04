@@ -12,6 +12,20 @@ public class Casa {
 	public Casa() {
 	}
 
+	public Casa(Endereco endereco, String cor, Porta porta, Garagem garagem, boolean temMuro, Proprietario dono) {
+		this.endereco = endereco;
+		this.cor = cor;
+		this.porta = porta;
+		this.garagem = garagem;
+		this.temMuro = temMuro;
+		this.dono = dono;
+	}
+
+	public Casa(String cor, boolean temMuro) {
+		this.cor = cor;
+		this.temMuro = temMuro;
+	}
+
 	public double calcularIPTU(double area){
 		double valorMetro;
 		double imposto = 0;

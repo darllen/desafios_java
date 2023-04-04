@@ -6,9 +6,6 @@ public class Proprietario {
 
 
 
-
-
-
 	public Proprietario() {
 	}
 
