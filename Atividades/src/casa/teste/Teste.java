@@ -3,7 +3,7 @@ package casa.teste;
 import casa.*;
 
 public class Teste {
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		Porta porta = new Porta();
 		Garagem garagem = new Garagem();
 		Casa casaA = new Casa();
@@ -12,6 +12,8 @@ public class Teste {
 		porta.cor = "azul";
 		porta.altura = 1.80;
 
+
+		//saldo+limite >= valor
 		garagem.numCarros = 2;
 		garagem.ehCoberta = true;
 		garagem.porta = null;
