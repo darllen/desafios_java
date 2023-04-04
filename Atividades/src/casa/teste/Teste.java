@@ -45,12 +45,14 @@ public class Teste {
 		//----------------------------
 		
 		casaA.cor = "verde";
-		casaB.temMuro = true;
+		//casaB.temMuro = true;
 		casaB.dono.nome = "Ana Raquel";
 		casaB.dono.telefone = "3543-3434";
 		
 		
 		System.out.println(casaA.dono.ehIgual(casaA.dono.nome, casaB.dono.nome));
+		System.out.println(casaA.calcularIPTU(40)); // tem muro
+		System.out.println(casaB.calcularIPTU(40)); // não tem muro
 		
 		
 	
