@@ -1,5 +1,4 @@
 package lojinha;
-
 // ctrl + shift + A, pesquisar plugins, Atom Material Icons
 public class Funcionario {
     private String cpf;
@@ -9,6 +8,12 @@ public class Funcionario {
 
 
     public Funcionario() {
+    }
+
+    public Funcionario(String cpf, String nome, double salario) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.salario = salario;
     }
 
     public String getCpf() {
@@ -87,7 +92,7 @@ public class Funcionario {
     public String formatarCPF(String cpfFuncionario){
         String cpfFormatado = "";
 
-        if (verificarCPFFormatado(this.cpf) == true){
+        if (verificarCPFFormatado(this.cpf)){
             cpfFormatado = this.cpf;
 
         } else {
