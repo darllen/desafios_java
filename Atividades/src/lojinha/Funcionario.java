@@ -1,5 +1,6 @@
 package lojinha;
 
+// ctrl + shift + A, pesquisar plugins, Atom Material Icons
 public class Funcionario {
     private String cpf;
     private String nome;
