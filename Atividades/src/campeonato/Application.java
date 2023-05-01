@@ -52,7 +52,6 @@ public class Application {
             if(opcao != 'S' || opcao == 's'){
                 break;
             }
-
         } while(opcao == 'S' || opcao == 's');
 
         Scanner sc = new Scanner(System.in);

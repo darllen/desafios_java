@@ -8,16 +8,15 @@ public class Jogo {
     private Time mandante;
     private int golsVisitante;
     private int golsMandante;
-    private Estado estado;
+    private String estadio;
 
-
-    public Jogo(LocalDateTime dataHora, Time visitante, Time mandante, int golsVisitante, int golsMandante, Estado estado) {
+    public Jogo(LocalDateTime dataHora, Time visitante, Time mandante, int golsVisitante, int golsMandante, String estadio) {
         this.dataHora = dataHora;
         this.visitante = visitante;
         this.mandante = mandante;
         this.golsVisitante = golsVisitante;
         this.golsMandante = golsMandante;
-        this.estado = estado;
+        this.estadio = estadio;
     }
 
     public LocalDateTime getDataHora() {
@@ -60,11 +59,11 @@ public class Jogo {
         this.golsMandante = golsMandante;
     }
 
-    public Estado getEstado() {
-        return estado;
+    public String getEstadio() {
+        return estadio;
     }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
+    public void setEstadio(String estadio) {
+        this.estadio = estadio;
     }
 }

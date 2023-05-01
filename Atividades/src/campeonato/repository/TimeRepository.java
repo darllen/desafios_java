@@ -23,16 +23,15 @@ public class TimeRepository {
 
     public void printTimes() {
         for (Time t : times) {
-            System.out.println("[" + t.getNome() + ", " + Estado.PE + ", " + t.getTreinador() + "]");
-            System.out.println("Pontuação: " + t.getPontuacao());
-            System.out.println("");
+            printTime(t);
+
         }
     }
 
     public void printTime(Time t) {
-        System.out.println("[" + t.getNome() + ", " + Estado.PE + ", " + t.getTreinador() + "]");
+        System.out.println("\n[" + t.getNome() + ", " + Estado.PE + ", " + t.getTreinador() + "]");
         System.out.println("Pontuação: " + t.getPontuacao());
-        System.out.println("------------------------");
+
 
     }
 
