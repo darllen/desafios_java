@@ -1,9 +1,9 @@
 package campeonato;
 
-import java.time.LocalDate;
+
 import java.util.ArrayList;
 
 public class Rodada {
-    private int numero;
+    private int numeroRodada;
     private ArrayList<Jogo> jogos;
 }

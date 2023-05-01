@@ -8,10 +8,10 @@ public class Jogo {
     private Time mandante;
     private int golsVisitante;
     private int golsMandante;
-    private String estado;
+    private Estado estado;
 
 
-    public Jogo(LocalDateTime dataHora, Time visitante, Time mandante, int golsVisitante, int golsMandante, String estado) {
+    public Jogo(LocalDateTime dataHora, Time visitante, Time mandante, int golsVisitante, int golsMandante, Estado estado) {
         this.dataHora = dataHora;
         this.visitante = visitante;
         this.mandante = mandante;
@@ -60,11 +60,11 @@ public class Jogo {
         this.golsMandante = golsMandante;
     }
 
-    public String getEstado() {
+    public Estado getEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(Estado estado) {
         this.estado = estado;
     }
 }
