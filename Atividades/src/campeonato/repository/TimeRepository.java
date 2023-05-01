@@ -3,7 +3,6 @@ package campeonato.repository;
 import campeonato.Estado;
 import campeonato.Time;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -12,8 +11,6 @@ public class TimeRepository {
 
     ArrayList<Time> times = new ArrayList<>();
 
-
-    //aqui vai chegar uma lista de pontos e vai add ao novo time que tá sendo criado
     public void addTime(ArrayList<Integer> pontuacao, String nome, Estado estado, String treinador){
         if(findByName(nome) == null) {
 
@@ -21,6 +18,28 @@ public class TimeRepository {
             times.add(newTime);
         } else {
             System.out.println("Time já existe!");
+        }
+    }
+
+    public void printTimes() {
+        for (Time t : times) {
+            System.out.println("[" + t.getNome() + ", " + Estado.PE + ", " + t.getTreinador() + "]");
+            System.out.println("Pontuação: " + t.getPontuacao());
+            System.out.println("");
+        }
+    }
+
+    public void printTime(Time t) {
+        System.out.println("[" + t.getNome() + ", " + Estado.PE + ", " + t.getTreinador() + "]");
+        System.out.println("Pontuação: " + t.getPontuacao());
+        System.out.println("------------------------");
+
+    }
+
+    public void deleteTimeByName(String nome) {
+        if(findByName(nome) != null){
+            times.remove(findByName(nome));
+            System.out.println("deleted!");
         }
     }
 
@@ -40,26 +59,6 @@ public class TimeRepository {
             listaTimes.add(time);
         }
         return listaTimes;
-    }
-
-    public void printTimes() {
-        for (Time t : times) {
-            System.out.println("Nome: " + t.getNome());
-            System.out.println("Estado: " + Estado.PE);
-            System.out.println("Treinador: " + t.getTreinador());
-            System.out.println("Pontuação: " + t.getPontuacao());
-            System.out.println("------------------------");
-        }
-    }
-
-    public void deleteTimeByName(String name) {
-        for (Time t : times) {
-            System.out.println("Nome: " + t.getNome());
-            System.out.println("Estado: " + Estado.PE);
-            System.out.println("Treinador: " + t.getTreinador());
-            System.out.println("Pontuação: " + t.getPontuacao());
-            System.out.println("------------------------");
-        }
     }
 
 
