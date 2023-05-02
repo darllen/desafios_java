@@ -47,4 +47,10 @@ public class Time {
     public void setTreinador(String treinador) {
         this.treinador = treinador;
     }
+
+    @Override
+    public String toString() {
+        return "\n[" + nome + ", " + estado + ", " + treinador + "]\n" +
+                "Pontuação: " + pontuacao;
+    }
 }

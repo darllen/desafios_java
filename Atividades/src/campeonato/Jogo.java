@@ -6,8 +6,8 @@ public class Jogo {
     private LocalDateTime dataHora;
     private Time visitante;
     private Time mandante;
-    private int golsVisitante;
-    private int golsMandante;
+    private Integer golsVisitante;
+    private Integer golsMandante;
     private String estadio;
 
     public Jogo(LocalDateTime dataHora, Time visitante, Time mandante, int golsVisitante, int golsMandante, String estadio) {
