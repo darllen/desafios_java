@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class ProdutoTest {
     public static void main(String[] args){
+
         ProdutoRepository produtoRepository = new ProdutoRepository();
         ArrayList<Produto> lista1 = new ArrayList<Produto>();
         ArrayList<Produto> lista2 = new ArrayList<Produto>();
