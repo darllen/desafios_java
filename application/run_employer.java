@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import entities.Employee;
 
-public class run_employee {
+public class run_employer {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
