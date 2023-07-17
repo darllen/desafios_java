@@ -1,6 +1,7 @@
-package com.example.apresentacao.segundo;
+package apresentacao.segundo;
 
-import com.example.apresentacao.primeiro.lib.PagamentoLib;
+
+import apresentacao.segundo.lib.PagamentoLib;
 
 public class PagamentoAdaptador implements ProcessadorPagamento {
     PagamentoLib pagamentos = new PagamentoLib();

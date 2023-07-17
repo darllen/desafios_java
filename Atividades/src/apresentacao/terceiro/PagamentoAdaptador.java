@@ -1,16 +1,18 @@
-package com.example.apresentacao.terceiro;
+package apresentacao.terceiro;
 
 
-import com.example.apresentacao.terceiro.lib.PagamentoLib;
+import apresentacao.terceiro.lib.PagamentoLib;
 
 public class PagamentoAdaptador extends PagamentoLib implements ProcessadorPagamento {
-
-    public void pagar(double valor) {
-        super.autorizar(valor);
+    public void debitar(double valor) {
+        this.autorizar(valor);
         super.capturar(valor);
     }
     public void creditar(double valor) {
         super.creditar(valor);
     }
-
+    @Override
+    public boolean autorizar(double valor) {
+        return true;
+    }
 }

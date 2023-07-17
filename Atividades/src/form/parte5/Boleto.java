@@ -44,9 +44,9 @@ public class Boleto {
         boolean retorno = true;
 
         //tem forma melhor de fazer isso
-        if (dataVencimento > agora){
-            retorno = false;
-        }
+//        if (dataVencimento > agora){
+//            retorno = false;
+//        }
 
         return retorno;
     }

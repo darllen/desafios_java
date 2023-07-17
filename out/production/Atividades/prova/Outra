@@ -1,0 +1,29 @@
+String opc = "S";
+        int i = 1;
+        System.out.println("LISTA 1: ");
+        do {
+            System.out.print("Produto " + i );
+            System.out.print("\nNome: ");
+            String nome = sc.nextLine();
+            System.out.print("Valor: ");
+            double valor = sc.nextDouble();
+            Produto produto = new Produto(nome, valor);
+            lista1.add(produto);
+            i++;
+            System.out.print("Deseja continuar adicionando na lista 1? [S/N] ");
+            opc = sc.next();
+        } while (opc == "S");
+
+        System.out.println("LISTA 2: ");
+        do {
+            System.out.print("Produto" + i + ": ");
+            System.out.print("Nome: ");
+            String nome = sc.next();
+            System.out.print("Valor: ");
+            double valor = sc.nextDouble();
+            Produto produto = new Produto(nome, valor);
+            lista2.add(produto);
+            i++;
+            System.out.print("Deseja continuar adicionando na lista 2? [S/N] ");
+            opc = sc.next();
+        } while (opc == "S");

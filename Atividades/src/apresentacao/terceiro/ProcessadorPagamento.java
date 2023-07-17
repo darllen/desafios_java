@@ -1,8 +1,8 @@
-package com.example.apresentacao.terceiro;
+package apresentacao.terceiro;
 
 public interface ProcessadorPagamento {
 
-    void pagar(double valor);
+    void debitar(double valor);
     void creditar(double valor);
 
 

@@ -1,4 +1,4 @@
-package com.example.apresentacao.segundo;
+package apresentacao.segundo;
 
 public interface ProcessadorPagamento {
 

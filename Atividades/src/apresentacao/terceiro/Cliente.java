@@ -1,10 +1,10 @@
-package com.example.apresentacao.terceiro;
+package apresentacao.terceiro;
 
 public class Cliente {
 
     public static void main(String[] args) {
         PagamentoAdaptador credito = new PagamentoAdaptador();
-        credito.pagar(100);
+        credito.debitar(100);
         credito.creditar(20);
     }
 }
